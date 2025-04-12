@@ -10,11 +10,6 @@ import { RouterOutlet } from '@angular/router';
   </main>
   `,
   styles: [
-    `
-    main{
-      padding: 16px;
-    }
-    `
   ],
 })
 export class AppComponent {

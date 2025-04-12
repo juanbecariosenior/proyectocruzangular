@@ -1,0 +1,25 @@
+<div class="header-container">
+    <div class="icon-section" (click)="selectIcon('automaticas')" (click)="seleccionarSeccion('automaticas')">
+      <div class="icon-circle" [ngClass]="{ 'active' : selectedIcon === 'automaticas'}">
+        <i class="ri-settings-4-fill" style="font-size: 90px;"></i>
+        <!--img src="assets/img-placeholder.png" alt="Automáticas" />-->
+      </div>
+      <div class="icon-text">Automáticas</div>
+    </div>
+  
+    <div class="logo-section">
+      <img src="Logo_de_Grupo_Sanborns.png" alt="Grupo Sanborns" class="logo" />
+      <div class="user-link">
+        <a href="#">Nombre Usuarios</a>
+      </div>
+    </div>
+  
+    <div class="icon-section" (click)="selectIcon('manuales')" (click)="seleccionarSeccion('manuales')">
+      <div class="icon-circle" [ngClass]="{ 'active' : selectedIcon === 'manuales'}">
+        <!--<img src="assets/img-placeholder.png" alt="Manuales" />-->
+        <i class="ri-pencil-line" style="font-size: 90px;"></i>
+      </div>
+      <div class="icon-text">Manuales</div>
+    </div>
+  </div>
+  

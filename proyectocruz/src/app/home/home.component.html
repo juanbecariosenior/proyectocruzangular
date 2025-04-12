@@ -1,0 +1,7 @@
+<app-header (sectionChanged)="onSectionChange($event)"></app-header>
+<div class="contenido">
+    <app-reglas *ngIf="selectedSection === 'reglas'"></app-reglas>
+    <app-automaticas *ngIf="selectedSection === 'automaticas'"></app-automaticas>
+    <app-manuales *ngIf="selectedSection === 'manuales'"></app-manuales>
+</div>
+

@@ -1,0 +1,85 @@
+.header-container {
+    display: flex; //Coloca los elementos hijos en una fila horizontal (por defecto).
+    justify-content: space-between; //Distribuye los elementos horizontalmente: uno a la izquierda, uno al centro, uno a la derecha (con espacio entre ellos).
+    align-items: center; //Alinea los elementos hijos verticalmente al centro del contenedor.
+    background-color: #f5f5f5;
+    padding: 40px 60px 20px;
+    position: relative;
+    height: 300px;
+  }
+  
+  .icon-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-bottom: 30px;
+    margin-top: 80px;
+    padding: 80px;
+  }
+  
+  .icon-circle {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #c2c5cf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    cursor: pointer;
+  }
+
+  .icon-circle.active {
+    transform: scale(1.1);
+    border: 2px solid #007bff;
+  }
+  
+  .icon-circle img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .icon-text {
+    margin-top: 12px;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #3e434d;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .logo-section {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .logo-section .logo {
+    width: 240px;
+    margin-bottom: 90px;
+  }
+  
+  .user-link {
+    position: absolute;
+    top: -25px;
+    right: -490px;
+    font-size: 0.9em;
+    z-index: 10;
+  }
+  
+  .user-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+  }
+  
+  .user-link a:hover {
+    text-decoration: underline;
+  }
+  
+
+   
