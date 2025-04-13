@@ -1,1 +1,67 @@
-<h2 class="titulo">Etiquetas Manuales</h2>
+<div class="manuales-container">
+    <h2 class="titulo">Etiquetas Manuales</h2>
+  
+    <div class="header-bar">
+      <input type="text" placeholder="Artículo SKU, EAN, Desc Larga" class="busqueda" />
+      <button class="buscar-btn">
+        <i class="ri-search-line"></i>
+      </button>
+    
+      <div class="selector-tienda">
+        <select>
+          <option>00001 Nombre de tienda</option>
+          <!-- más opciones -->
+        </select>
+      </div>
+    </div>
+  
+    <div class="contenido-principal">
+      <!-- Lista de productos -->
+      <div class="concedentes">
+        <h4>Lista de Artículos concedentes</h4>
+        <div *ngFor="let producto of productos">
+          <label>
+            <input type="checkbox" [(ngModel)]="producto.seleccionado" />
+            {{ producto.nombre }}
+          </label>
+        </div>
+      </div>
+      <button class="agregar-btn">Agregar</button>
+  
+      <!-- Tabla de etiquetas -->
+      <div class="etiquetas">
+        <h4>Etiquetas a imprimir</h4>
+        <table>
+          <thead>
+            <tr>
+              <th>EAN</th>
+              <th>SKU</th>
+              <th>Tipo (Editable)</th>
+              <th>Cantidad (Editable)</th>
+              <th>Con Precio (Editable)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let etiqueta of etiquetas">
+              <td><input type="text" [value]="etiqueta.ean" /></td>
+              <td><input type="text" [value]="etiqueta.sku" /></td>
+              <td>
+                <select [(ngModel)]="etiqueta.tipo">
+                  <option value="J">J</option>
+                  <!-- más opciones -->
+                </select>
+              </td>
+              <td><input type="number" [(ngModel)]="etiqueta.cantidad" /></td>
+              <td><input type="checkbox" [(ngModel)]="etiqueta.conPrecio" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  
+    <div class="acciones">
+      <button class="imprimir-btn">Imprimir</button>
+    </div>
+  </div>
+  
+
