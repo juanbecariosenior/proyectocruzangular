@@ -1,66 +1,53 @@
-<h2 class="titulo">Etiquetas Automaticas</h2>
-<div class="container">
-    <div class="left-panel">
-      <div class="search-box">
-        <label for="search-input">Artículo SKU, EAN, Desc Larga</label>
-        <input id="search-input" type="text" placeholder="Buscar" />
-        <button class="search-button">🔍</button>
-      </div>
-  
-      <div class="product-list">
-        <h3>Lista de Artículos concedentes</h3>
-        <div *ngFor="let producto of productos">
-          <input
-            type="checkbox"
-            id="producto-{{ producto.id }}"
-            [(ngModel)]="producto.seleccionado"
-          />
-          <label for="producto-{{ producto.id }}">{{ producto.nombre }}</label>
-        </div>
-      </div>
-  
-      <button class="primary-button" (click)="agregarEtiquetas()">Agregar</button>
+<div class="automaticas-container">
+  <h2 class="titulo">Etiquetas Automaticas</h2>
+
+  <div class="automaticas-header">
+    <div class="selector-division">
+      <p>Seleccione Division</p>
+      <select>
+        <option>Todas</option>
+      </select>
     </div>
-  
-    <div class="right-panel">
-      <table class="custom-table">
-        <thead>
-          <tr>
-            <th>EAN</th>
-            <th>SKU</th>
-            <th>Tipo (Editable)</th>
-            <th>Cantidad (Editable)</th>
-            <th>Con Precio (Editable)</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor="let etiqueta of etiquetas">
-            <td>{{ etiqueta.ean }}</td>
-            <td>{{ etiqueta.sku }}</td>
-            <td>
-              <select [(ngModel)]="etiqueta.tipo">
-                <option value="J">J</option>
-                <option value="K">K</option>
-              </select>
-            </td>
-            <td>
-              <input
-                type="number"
-                [(ngModel)]="etiqueta.cantidad"
-                class="quantity-input"
-              />
-            </td>
-            <td>
-              <input
-                type="checkbox"
-                [(ngModel)]="etiqueta.conPrecio"
-              />
-            </td>
-          </tr>
-        </tbody>
-      </table>
-  
-      <button class="primary-button print-button">Imprimir</button>
+
+    <button class="actualizarbtn">Actualizar</button>
+    <button class="actualizarCantidad">Actualizar cantidad a 1</button>
+
+    <div class="selector-tienda">
+      <select>
+        <option>00001 Nombre de tienda</option>
+      </select>
     </div>
   </div>
+  <div class="etiquetas">
+    <h4>Etiquetas a imprimir</h4>
+    <table>
+      <thead>
+        <tr>
+          <th>EAN</th>
+          <th>SKU</th>
+          <th>Tipo (Editable)</th>
+          <th>Cantidad (Editable)</th>
+          <th>Con Precio (Editable)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let etiqueta of etiquetas">
+          <td><input type="text" [value]="etiqueta.ean" /></td>
+          <td><input type="text" [value]="etiqueta.sku" /></td>
+          <td>
+            <select [(ngModel)]="etiqueta.tipo">
+              <option value="J">J</option>
+              <!-- más opciones -->
+            </select>
+          </td>
+          <td><input type="number" [(ngModel)]="etiqueta.cantidad" /></td>
+          <td><input type="checkbox" [(ngModel)]="etiqueta.conPrecio" /></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="acciones">
+    <button class="imprimir-btn">Imprimir</button>
+  </div>
+</div>
   
