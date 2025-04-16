@@ -1,74 +1,77 @@
 .automaticas-container{
-  padding: 20px;
+  padding: 1vw;
   font-family: Arial, sans-serif;
     color: #3e434d;
   }
   
   .titulo {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 3vh;
   }
 
   .automaticas-header{
     display: flex;
     align-items: center;
     //justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 2vh;
 
     .selector-division{
-      margin-bottom: 35px;
-      margin-left: 30px;
-      width: 150px;
+      margin-bottom: 3vh;
+      margin-left: 1vw;
+      width: 5vw;
       //padding: 8px;
-      margin-right: 400px;
+      margin-right: 32vw;
     }
 
     .selector-division select{
-      padding: 8px;
-      width: 130px;
+      padding: 0.8vw;
+      width: 15vw;
     }
 
     .actualizarbtn{
-      padding: 16px;
-      width: 150px;
+      margin-top: 2vw;
+      padding: 1.6vw;
+      width: 10vw;
       background-color: #6c7387;
       color: white;
       border: none;
-      margin-right: 30px;
+      margin-right: 3vw;
     }
 
     .actualizarCantidad{
-      padding: 16px;
-      width: 170px;
+      margin-top: 2vw;
+      padding: 0.970vw;
+      width: 10vw;
       background-color: #6c7387;
       color: white;
       border: none;
-      margin-right: 350px;
+      margin-right: 25vw;
     }
 
     .selector-tienda select {
-      padding: 15px;
+      margin-top: 2vw;
+      padding: 0.8vw;
     }
   }
 
   .etiquetas {
     flex: 2;
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: 0.1vw solid #ccc;
+    padding: 1.5vw;
 
     table {
       width: 100%;
       border-collapse: collapse;
 
       th, td {
-        border-bottom: 1px solid #ccc;
-        padding: 8px;
+        border-bottom: 0.1vw solid #ccc;
+        padding: 0.8vw;
         text-align: left;
       }
 
       input, select {
         width: 100%;
-        padding: 5px;
+        padding: 0.5vw;
       }
 
       input[type="checkbox"] {
@@ -80,10 +83,10 @@
   .acciones {
     display: flex;
     justify-content: flex-end;
-    margin-top: 20px;
+    margin-top: 2vh;
   
     .imprimir-btn {
-      padding: 12px 30px;
+      padding: 2.2vh 4vw;
       background-color: #6c7387;
       color: white;
       border: none;
