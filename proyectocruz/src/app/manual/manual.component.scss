@@ -1,27 +1,28 @@
-.header-container{
-    display: flex; //Coloca los elementos hijos en una fila horizontal (por defecto).
-    //justify-content: space-between; //Distribuye los elementos horizontalmente: uno a la izquierda, uno al centro, uno a la derecha (con espacio entre ellos).
-    //align-items: center; //Alinea los elementos hijos verticalmente al centro del contenedor.
-    background-color: #f5f5f5;
-    padding: 40px 60px 20px;
-    position: relative;
-    height: 120px;
+.header-container {
+  display: flex;
+  background-color: #f5f5f5;
+  padding: 4vh; /* Convertido de 40px 60px 20px */
+  position: relative;
+  height: 25vh; /* Convertido de 120px */
 }
 
 .logo-section {
-    position:relative;
+  position: relative;
+    display: grid; /* Activa Grid */
+    place-items: center; /* Centra horizontal y verticalmente */
+    height: 100%; /* Asegura que el contenedor ocupe todo el espacio del padre */
     text-align: center;
-  }
-  
-  .logo-section .logo {
-    width: 240px;
-    margin-bottom: 70px;
-    margin-top: -25px;
-    margin-left: 450px;
-  }
+}
 
-  .manual-section{
-    padding: 20px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+.logo-section .logo {
+  width: 20vw; /* Convertido de 240px */
+  margin-bottom: 9vh; /* Convertido de 70px */
+  margin-top: -4vh; /* Convertido de -25px */
+  margin-left: 39vw; /* Convertido de 450px */
+}
+
+.manual-section {
+  padding: 1.5vh; /* Convertido de 20px */
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}

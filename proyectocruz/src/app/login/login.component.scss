@@ -1,30 +1,30 @@
 .login-container{ // Este bloque aplica estilos a un contenedor principal con la clase .login-container
-    width: 400px; //ancho
-    margin: 40px auto; //15px de margen superior/inferior y centrado horizontal automático.
-    padding: 30px; //espacio interno
-    border: 1px solid #ccc; 
+    width: 35vw; //ancho
+    margin: 5vh auto; //15px de margen superior/inferior y centrado horizontal automático.
+    padding: 3vh; //espacio interno
+    border: 0.1rem solid #ccc; 
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
 
     .logo-container{
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 1vh;
 
         .logo{
-            max-width: 150px;
+            max-width: 15vw;
         }
     }
 
     h2 {
-        margin: 20px 0 10px;
+        margin: 2.5vh 0 1vh;
     }
 
     .forgot-password{
         float: right;
-        font-size: 0.9em;
+        font-size: 1.15vw;
         color: #007bff;
         text-decoration: none;
-        margin-bottom: 10px;
+        margin-bottom: 1.5vh;
         //display: inline-block;
 
         &:hover{
@@ -35,36 +35,36 @@
     form {
         .form-input {
             width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            font-size: 1em;
+            padding: 1.75vh;
+            margin: 1.70vh 0;
+            font-size: 1.3vw;
             box-sizing: border-box;
         }
 
         .checkbox-group {
-            margin: 10px 0;
-            font-size: 0.9em;
+            margin: 2vh 0;
+            font-size: 1.20vw;
 
             label {
                 display: block;
-                margin: 5px 0;
+                margin: 0.5vh 0;
                 cursor: pointer;
 
                 input {
-                    margin-right: 5px;
+                    margin-right: 0.5vw;
                 }
             }
         }
 
         .login-button{
             width: 100%;
-            padding: 12px;
+            padding: 1.5vh;
             background-color: #6c7389;
             color: white;
             border: none;
-            font-size: 1em;
+            font-size: 1.2vw;
             cursor: pointer;
-            margin-top: 10px;
+            margin-top: 1vh;
             transition: background-color 0.3s;
 
             &:hover {

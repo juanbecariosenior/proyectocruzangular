@@ -3,9 +3,9 @@
     justify-content: space-between; //Distribuye los elementos horizontalmente: uno a la izquierda, uno al centro, uno a la derecha (con espacio entre ellos).
     align-items: center; //Alinea los elementos hijos verticalmente al centro del contenedor.
     background-color: #f5f5f5;
-    padding: 40px 60px 20px;
+    padding: 2.5rem 4vw 1.25rem;
     position: relative;
-    height: 300px;
+    height: 55vh;
   }
   
   .icon-section {
@@ -13,38 +13,38 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-bottom: 30px;
-    margin-top: 80px;
-    padding: 80px;
+    margin-bottom: 2rem;
+    margin-top: 11vh;
+    padding: 15vh;
   }
   
   .icon-circle {
-    width: 180px;
-    height: 180px;
+    width: 14vw;
+    height: 14vw;
     border-radius: 50%;
     background-color: #c2c5cf;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 0.125rem solid transparent;
     cursor: pointer;
   }
 
   .icon-circle.active {
     transform: scale(1.1);
-    border: 2px solid #007bff;
+    border: 0.125rem solid #007bff;
   }
   
   .icon-circle img {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
   }
   
   .icon-text {
-    margin-top: 12px;
+    margin-top: 0.95rem;
     font-size: 1.1em;
     font-weight: 600;
     color: #3e434d;
@@ -54,18 +54,18 @@
   .logo-section {
     position: relative;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 4rem;
   }
   
   .logo-section .logo {
-    width: 240px;
-    margin-bottom: 90px;
+    width: 16vw;
+    margin-bottom: 14vh;
   }
   
   .user-link {
     position: absolute;
-    top: -25px;
-    right: -490px;
+    top: -2rem;
+    right: -39vw;
     font-size: 0.9em;
     z-index: 10;
   }
